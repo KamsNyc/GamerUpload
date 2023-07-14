@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Montserrat, Arial, sans-serif;
+  background-color: #333;
+  padding: 25px 217px 50px 217px;
+  background-image: url(bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: auto;
+}
+
+header {
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 180px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 40px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.hero {
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.hero h2 {
+  font-weight: 800;
+  font-size: 100px;
+  text-align: center;
+  line-height: 90%;
+  letter-spacing: -8%;
+  background: linear-gradient(-65deg, #00F0FF, #FFFFFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  margin-top: 25px;
+  font-weight: 300;
+  font-size: 35px;
+  text-align: center;
+  line-height: 90%;
+  letter-spacing: -8%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#uploadContainer {
+  background-color: #cfcece1f;
+  width: 560px;
+  height: 300px;
+  margin-top: 50px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+#uploadContainer:hover {
+  background-color: lightcoral;
+  transform: scale(1.15);
+}
+
+.upload-icon {
+  padding-top: 20px;
+  width: 180px;
+  height: auto;
+  padding-bottom: 25px;
+}
+
+.upload-text {
+  padding-top: 10px;
+  color: #fff;
+  font-weight: 200;
+}
+
+#dot-2 {
+  padding-left: 3px;
+}
+
+.select-file {
+  padding-top: 5px;
+  color: #fff;
+  font-weight: 200;
+  padding-bottom: 25px;
+  opacity: 50%;
+}
+
+.discord-container {
+  background-color: #9b9b9b18;
+  margin-top: 30px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  transition: background-color 0.6s ease, transform 0.6s ease;
+  cursor: pointer;
+}
+
+.discord-container:hover {
+  background-color: lightcoral;
+  transform: scale(1.05);
+}
+
+.discord {
+  display: flex;
+  color: #fff;
+}
+
+.discord p {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.recent-clips {
+  margin-top: 40px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.clipContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.clip {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.clip:hover .info {
+  opacity: 1;
+}
+
+.clip a {
+  text-decoration: none;
+  color: white;
+}
+
+.clip video {
+  width: 100%;
+  height: auto;
+}
+
+.clip h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+.clip .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.clip .info p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.clip .info button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0;
+}
+
+.clip .info button:hover {
+  text-decoration: underline;
+}
+
+.no-video-message {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
